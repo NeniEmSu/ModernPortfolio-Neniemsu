@@ -116,12 +116,13 @@
 
     &:hover {
       color: $secondary-color;
+      transform: scale(1.1);
     }
   }
 }
 
 // Delay each nav item slide by a 0.1s delay
-@for $x from 1 through 4 {
+@for $x from 1 through 5 {
   .nav-item:nth-child(#{$x}) {
     transition: $x * 0.5s;
   }
