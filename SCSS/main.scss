@@ -18,6 +18,10 @@ body {
   line-height: 1.5;
 }
 
+section {
+  @include background-rest;
+}
+
 h1,
 h2,
 h3 {
@@ -175,7 +179,7 @@ main {
   color: #333;
 }
 
-.br #main-footer {
+#main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
