@@ -8,6 +8,7 @@ html {
 * {
   box-sizing: border-box;
 }
+
 body {
   @include background;
   background: $primary-color;
@@ -57,20 +58,38 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
+
   .icons {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+    float: left;
 
     a {
-      padding: 0.4rem;
+      display: inline-block;
+      height: 4rem;
+      line-height: 4rem;
+      width: 4rem;
+      font-size: 2rem;
+      margin: 0px 0.6rem;
+      border-radius: 50%;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      color: set-text-color($primary-color);
 
       &:hover {
         color: $secondary-color;
+        background-color: set-text-color($primary-color);
+        border-radius: 50%;
+        transform: scale(1.5);
         @include easeOut();
       }
     }
   }
+
   &#home {
     overflow: hidden;
+
     h1 {
       margin-top: 15vh;
     }
@@ -91,16 +110,20 @@ main {
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
+
   .job-1 {
     grid-area: job1;
   }
+
   .job-2 {
     grid-area: job2;
   }
+
   .job-3 {
     grid-area: job3;
   }
@@ -157,6 +180,12 @@ main {
   }
 }
 
+#map {
+  margin: 2rem auto;
+  height: 260px;
+  width: 50%;
+}
+
 .btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -168,11 +197,13 @@ main {
     color: set-text-color($secondary-color);
   }
 }
+
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
 }
+
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);

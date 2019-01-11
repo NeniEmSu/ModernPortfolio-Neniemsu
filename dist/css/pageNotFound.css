@@ -96,6 +96,7 @@ html {
 
 .notFound .homeBtn,
 .notFound .contactBtn {
+  outline: none;
   font-family: "Staatliches", "lobster", cursive;
   display: inline-block;
   font-weight: 700;
@@ -114,12 +115,14 @@ html {
 
 .notFound .homeBtn:hover,
 .notFound .contactBtn:hover {
+  outline: none;
   opacity: 0.85;
   transform: scale(1.5);
 }
 
 .notFound .homeBtn,
 .notFound .contactBtn {
+  outline: none;
   border: 2px solid var(--main-txt-color);
   color: var(--main-txt-color);
 }

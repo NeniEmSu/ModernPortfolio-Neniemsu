@@ -16,11 +16,16 @@
     align-items: center;
     text-align: center;
 
+    .icons {
+      float: none;
+    }
+
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
     }
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -48,6 +53,7 @@
       width: 150px;
     }
   }
+
   .about-info {
     grid-template-areas:
       "bioimage"
@@ -58,8 +64,15 @@
 
     grid-template-columns: 1fr;
   }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #map {
+    margin: 1.5rem auto;
+    height: 240px;
+    width: 80%;
   }
 }
 
@@ -67,7 +80,14 @@
   main#home h1 {
     margin-top: 10vh;
   }
+
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #map {
+    margin: 1.5rem auto;
+    height: 240px;
+    width: 100%;
   }
 }
