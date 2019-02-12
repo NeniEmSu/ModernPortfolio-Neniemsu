@@ -1,6 +1,6 @@
 # ModernPortfolio-Neniemsu
 
-This was my first portfolio Site project after that on codepen that is. I followed the instructions from Travacy media to make this and i realy loved making it.\
+This was my first portfolio Site project after that on codepen that is. I followed the instructions from Travacy Media to make this and i really loved making it.
 
 Currently live on www.neniemsu.com
 
